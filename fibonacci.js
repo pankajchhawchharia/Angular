@@ -5,7 +5,7 @@ function fibonaci(num) {
         return `${fib} number of terms: ${num}`;
     }
     if(num === 1) {
-        return `${fib} number of terms: ${0}`;
+        return `${1} number of terms: ${num}`;
     }
     fib = [0,1];
     for (let i=2;i<num;i++) {
