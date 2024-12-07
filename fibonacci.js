@@ -2,10 +2,10 @@
 function fibonaci(num) {
     let fib = [];
     if(num<=0) {
-        return num;
+        return `${fib} number of terms: ${num}`;
     }
     if(num === 1) {
-        return num;
+        return `${fib} number of terms: ${0}`;
     }
     fib = [0,1];
     for (let i=2;i<num;i++) {
@@ -14,4 +14,4 @@ function fibonaci(num) {
     }
     return `${fib} number of terms: ${num}`;
 }
-console.log("fibonacci series: ",fibonaci(3));
+console.log("fibonacci series: ",fibonaci(1));
