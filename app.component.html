@@ -1,0 +1,9 @@
+<div *ngIf="showPopUp" class="popup" role="dialog" aria-label="Scroll Popup">
+  <p>You have reached the bottom of the page!</p>
+  <button (click)="closePopUp()" aria-label="Close Popup">Close</button>
+</div>
+
+<div class="content">
+  <!-- Add your main content here to enable scrolling -->
+  <p *ngFor="let i of [].constructor(100); let index = index">Content line {{ index + 1 }}</p>
+</div>
